@@ -67,7 +67,9 @@
 		}
 	},
 	"scripts": {
-		"dev": "npm run start",
+		"dev": "vite --config vite.config.deck.js",
+		"deck:build": "vite build --config vite.config.deck.js",
+		"preview": "vite preview --config vite.config.deck.js",
 		"start": "vite",
 		"prepack": "npm run build",
 		"build:core": "tsc && vite build && vite build -c vite.config.styles.ts && node scripts/add-banner.js dist/reveal.js",
