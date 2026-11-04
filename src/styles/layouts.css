@@ -3,6 +3,17 @@
 .reveal .slides section.slide { width: 100%; height: 100%; padding: var(--safe-y) var(--safe-x) 112px; background-color: var(--bg); }
 .reveal .slides section.bg-atmosphere { background-image: radial-gradient(ellipse at 90% 20%, #19354a88, transparent 55%), radial-gradient(ellipse at 75% 100%, #30244555, transparent 50%); }
 .slide > header { margin-bottom: 56px; }
+.about-grid { display: grid; grid-template-columns: 1fr 360px; gap: 100px; align-items: center; margin-top: 130px; }
+.reveal .about-work { display: flex; align-items: center; gap: 24px; font-size: 40px; color: var(--muted); margin-top: 32px; }
+.reveal .about-work .avalara-logo { display: block; width: 280px; height: auto; margin: 0; }
+.about-copy .rule { margin: 48px 0 36px; }
+.reveal .about-meetup { font-size: 42px; letter-spacing: -.025em; }
+.reveal .about-copy .subtitle { margin-top: 12px; }
+.qr-placeholder { width: 360px; height: 360px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; border: 2px dashed var(--border); border-radius: 16px; background: var(--bg-secondary); color: var(--muted); font-size: 24px; }
+.qr-placeholder .mono { color: var(--text); font-size: 32px; letter-spacing: .12em; }
+.reveal .about-qr figcaption { justify-content: center; padding: 24px 0 0; font-size: 24px; }
+/* Replace .qr-placeholder with an img using this class; retain the QR's white quiet zone. */
+.reveal .about-qr img { display: block; width: 360px; height: 360px; margin: 0; padding: 20px; background: white; object-fit: contain; }
 .layout-title .title-copy { position: relative; z-index: 1; margin-top: 112px; }
 .reveal .edition { font: 19px var(--mono); color: var(--muted); margin-bottom: 28px; }
 .edition span { margin: 0 14px; color: var(--accent); }

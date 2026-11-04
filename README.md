@@ -1,6 +1,8 @@
 # Reducing MTTR with AI Agents
 
-A Reveal.js design system and **11-slide layout sampler**, not the final talk. All descriptions, metrics, contact details, and demo commands are placeholders.
+A Reveal.js design system with an **About me opening slide and 11 reusable layout examples**, not the final talk. The opening introduces Harry, Avalara, and brightonalt.net. Other descriptions, metrics, contact details, and demo commands remain placeholders.
+
+The first slide is `#/about`. Its QR-code space is deliberately not scannable yet. Once the destination URL is supplied, replace `.qr-placeholder` in `index.html` with a locally stored QR image inside `.about-qr`, preserving the white quiet zone and providing descriptive alt text.
 
 ## Run the presentation
 
@@ -43,6 +45,7 @@ Each `section` has the base `slide` class plus one layout class. Open a link by 
 
 | Layout | Class | Direct link |
 |---|---|---|
+| About me | `layout-about bg-atmosphere` | `#/about` |
 | A · Title | `layout-title bg-atmosphere` | `#/title` |
 | B · Section divider | `layout-section bg-atmosphere` | `#/section` |
 | C · Standard content | `layout-content` | `#/content` |
@@ -112,7 +115,7 @@ The deck uses one page per slide and combines fragments on the same page (`pdfSe
 
 ## Verification and limitations
 
-Verified in Chromium against the production preview:
+The original 11-layout sampler was verified in Chromium against the production preview:
 
 - All 11 layouts reviewed visually; no detected content overflow/footer collisions at 1366×768, 1600×900 and 1920×1080.
 - Keyboard navigation, direct hashes, sequential fragments, overview, fullscreen, slide numbers and progress.
