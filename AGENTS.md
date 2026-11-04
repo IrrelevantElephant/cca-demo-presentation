@@ -11,7 +11,7 @@ Prefer small, targeted edits. Inspect the working tree first and preserve unrela
 ## Confirmed presenter details and decisions
 
 - Name: **Harry**.
-- Works at **Avalara**. No specific job title has been supplied; do not invent one.
+- **Software Engineer** at **Avalara**. The opening slide displays “Software Engineer” followed by the Avalara logo.
 - Runs **https://brightonalt.net**, a **monthly meetup for .NET developers**.
 - The first slide is **About me**, with ID `about` (`/#/about`), followed by the title slide (`/#/title`).
 - The About me slide reserves space for a QR code. **The destination URL has not been supplied.** Keep the placeholder clearly non-scannable; do not assume it points to the meetup site.

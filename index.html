@@ -12,27 +12,22 @@
   <div class="reveal">
     <div class="slides">
 
-      <!-- About me · Replace the QR placeholder with an image once the URL is known. -->
+      <!-- About me -->
       <section id="about" class="slide layout-about bg-atmosphere" aria-labelledby="about-heading">
-        <p class="eyebrow"><span class="brand-mark" aria-hidden="true"></span> About me</p>
         <div class="about-grid">
           <div class="about-copy">
             <h1 id="about-heading">Hi, I’m <span class="accent">Harry.</span></h1>
-            <p class="about-work">I work at <img class="avalara-logo" src="/src/assets/images/avalara-logo.svg" alt="Avalara" width="280" height="61"></p>
+            <p class="about-work">Software Engineer <img class="avalara-logo" src="/src/assets/images/avalara-logo.svg" alt="Avalara" width="280" height="61"></p>
             <div class="rule"></div>
-            <p class="about-meetup">I run <a href="https://brightonalt.net">brightonalt.net</a></p>
-            <p class="subtitle">A monthly meetup for .NET developers.</p>
+            <p class="about-meetup"><a href="https://brightonalt.net">brightonalt.net</a> - a monthly meetup for .NET developers</p>
           </div>
           <figure class="about-qr">
-            <div class="qr-placeholder" role="img" aria-label="Space reserved for a QR code; link to be added later">
-              <span class="mono">QR CODE</span>
-              <span>Link coming soon</span>
-            </div>
-            <figcaption>Let’s connect.</figcaption>
+            <img src="/src/assets/images/cca-demo-qr.png" alt="QR code linking to https://github.com/irrelevantElephant/cca-demo" width="360" height="360">
+            <figcaption><a href="https://github.com/irrelevantElephant/cca-demo">github.com/irrelevantElephant/cca-demo</a></figcaption>
           </figure>
         </div>
-        <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Harry / About me</span></footer>
-        <aside class="notes">Introduce yourself: Harry, working at Avalara, and organiser of brightonalt.net, a monthly meetup for .NET developers. The QR code destination is still to be supplied; the placeholder is not scannable.</aside>
+        <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Harry</span></footer>
+        <aside class="notes">Introduce yourself: Harry, working at Avalara, and organiser of brightonalt.net, a monthly meetup for .NET developers. The QR code links to https://github.com/irrelevantElephant/cca-demo.</aside>
       </section>
 
       <!-- A · Title. Copy a complete section to reuse a layout. -->
@@ -65,36 +60,36 @@
 
       <!-- C · Standard content -->
       <section id="content" class="slide layout-content" aria-labelledby="content-heading">
-        <header><p class="eyebrow">The essentials / Concept</p><h2 id="content-heading">Make room for the idea.</h2></header>
+        <header><p class="eyebrow">The essentials / Incident response</p><h2 id="content-heading">What is MTTR?</h2></header>
         <div class="content-grid">
-          <div><p class="lead">One clear concept.<br>Enough space to understand it.</p><p class="body-copy">Use this space for a short explanation. Keep the detail in your speaker notes, not on the screen.</p></div>
-          <aside class="callout"><span class="eyebrow">Worth remembering</span><p>A useful supporting thought deserves its own space.</p><span class="badge">Example callout</span></aside>
+          <div><p class="lead">Mean time to recovery<br>(or repair).</p><p class="body-copy">A measure of how long it takes to restore service after an incident is detected.</p></div>
+          <aside class="callout"><span class="eyebrow">Why it matters</span><p>MTTR measures how effectively we respond when things go wrong.</p><span class="badge">Recovery matters</span></aside>
         </div>
-        <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Concept layout</span></footer>
-        <aside class="notes">Use the lead for the main thought and the callout for supporting context. Aim for fewer than 45 visible words.</aside>
+        <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Measure recovery</span></footer>
+        <aside class="notes">MTTR has several common expansions, including mean time to recovery and mean time to repair. For this talk, use it as the time from incident detection to restored service. Be explicit about the chosen start and end points when measuring it.</aside>
       </section>
 
       <!-- D · Comparison -->
       <section id="comparison" class="slide layout-comparison" aria-labelledby="comparison-heading">
-        <header><p class="eyebrow">Side by side / Comparison</p><h2 id="comparison-heading">Two ways to frame an idea.</h2></header>
+        <header><p class="eyebrow">Prevention and response / Both matter</p><h2 id="comparison-heading">Shift left—and be ready.</h2></header>
         <div class="columns">
-          <article class="comparison-panel"><span class="panel-index">01 / Approach A</span><h3>A familiar starting point</h3><p>A short description of the first approach, state, or perspective.</p><div class="divider"></div><ul class="clean-list"><li>One defining characteristic</li><li>One important trade-off</li></ul></article>
-          <article class="comparison-panel accented"><span class="panel-index">02 / Approach B</span><h3>A different possibility</h3><p>A balanced description of the alternative, with equal visual weight.</p><div class="divider"></div><ul class="clean-list"><li>One defining characteristic</li><li>One important trade-off</li></ul></article>
+          <article class="comparison-panel"><span class="panel-index">01 / Prevent</span><h3>Shift-left development</h3><p>Good testing and QA catch defects earlier and reduce risk.</p><div class="divider"></div><ul class="clean-list"><li>Build quality into delivery</li><li>Find issues before production</li></ul></article>
+          <article class="comparison-panel accented"><span class="panel-index">02 / Recover</span><h3>Expect incidents</h3><p>Testing cannot eliminate every production failure. Plan to respond and restore service.</p><div class="divider"></div><ul class="clean-list"><li>Make incidents observable</li><li>Improve recovery time (MTTR)</li></ul></article>
         </div>
-        <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Comparison layout</span></footer>
-        <aside class="notes">Neither side must mean good or bad. Use explicit labels instead of relying on colour to communicate the comparison.</aside>
+        <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Prevent + recover</span></footer>
+        <aside class="notes">This is not an argument against shift-left. Testing and QA are essential, but complex systems still fail in production. MTTR is one way to assess how well we handle those failures.</aside>
       </section>
 
       <!-- E · Cards. Fragments are optional; remove class="fragment" for all-at-once. -->
       <section id="cards" class="slide layout-cards" aria-labelledby="cards-heading">
-        <header><p class="eyebrow">A small collection / Three ideas</p><h2 id="cards-heading">Distinct ideas. Shared language.</h2></header>
+        <header><p class="eyebrow">Project-level context / Faster response</p><h2 id="cards-heading">Help an engineer ramp up fast.</h2></header>
         <div class="cards">
-          <article class="card fragment"><div class="card-top"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h4"/></svg></span><span class="mono">01</span></div><h3>First concept</h3><p>A brief description that gives this idea a clear, memorable shape.</p><span class="card-tag">A useful input</span></article>
-          <article class="card fragment"><div class="card-top"><span class="icon-box violet"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v9h9M9 6h9v9"/></svg></span><span class="mono">02</span></div><h3>Second concept</h3><p>A related thought, expressed with the same level of detail.</p><span class="card-tag">A useful connection</span></article>
-          <article class="card fragment"><div class="card-top"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6M5 21h14"/></svg></span><span class="mono">03</span></div><h3>Third concept</h3><p>A final building block to complete this small collection.</p><span class="card-tag">A useful outcome</span></article>
+          <article class="card fragment"><div class="card-top"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h4"/></svg></span><span class="mono">01</span></div><h3>MCP</h3><p>Connect the agent to approved tools and operational data.</p><span class="card-tag">Useful integrations</span></article>
+          <article class="card fragment"><div class="card-top"><span class="icon-box violet"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v9h9M9 6h9v9"/></svg></span><span class="mono">02</span></div><h3>Skills</h3><p>Capture repeatable workflows for investigation and response.</p><span class="card-tag">Reusable procedures</span></article>
+          <article class="card fragment"><div class="card-top"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6M5 21h14"/></svg></span><span class="mono">03</span></div><h3>Memory files</h3><p>Keep repo-specific architecture and conventions close to the code.</p><span class="card-tag">Project context</span></article>
         </div>
         <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Three-card layout</span></footer>
-        <aside class="notes">Advance three times to reveal the cards. Remove fragment classes when staged appearance is not useful.</aside>
+        <aside class="notes">Together, well-maintained project-level MCP configuration, skills and memory files can help a support engineer understand a repository and act more quickly during a production outage. Keep permissions bounded, validate findings, and require appropriate review before risky changes. Advance three times to reveal each element.</aside>
       </section>
 
       <!-- F · Architecture. SVG coordinates share the slide's design scale. -->
