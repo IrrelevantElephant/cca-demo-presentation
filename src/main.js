@@ -11,8 +11,8 @@ const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
 document.querySelectorAll('.slides section.slide:not(#about)').forEach((slide) => {
   const link = document.createElement('a');
   link.className = 'slide-qr';
-  link.href = 'https://github.com/irrelevantElephant/cca-demo';
-  link.setAttribute('aria-label', 'Visit the cca-demo GitHub repository');
+  link.href = 'https://cca-demo.irrelevantelephant.co.uk/';
+  link.setAttribute('aria-label', 'Visit the cca-demo demo site');
   link.innerHTML = '<img src="/src/assets/images/cca-demo-qr.png" alt="">';
   slide.append(link);
 });

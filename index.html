@@ -22,12 +22,12 @@
             <p class="about-meetup"><a href="https://brightonalt.net">brightonalt.net</a> - a monthly meetup for .NET developers</p>
           </div>
           <figure class="about-qr">
-            <img src="/src/assets/images/cca-demo-qr.png" alt="QR code linking to https://github.com/irrelevantElephant/cca-demo" width="360" height="360">
-            <figcaption><a href="https://github.com/irrelevantElephant/cca-demo">github.com/irrelevantElephant/cca-demo</a></figcaption>
+            <img src="/src/assets/images/cca-demo-qr.png" alt="QR code linking to https://cca-demo.irrelevantelephant.co.uk/" width="360" height="360">
+            <figcaption><a href="https://cca-demo.irrelevantelephant.co.uk/">cca-demo.irrelevantelephant.co.uk</a></figcaption>
           </figure>
         </div>
         <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Harry</span></footer>
-        <aside class="notes">Introduce yourself: Harry, working at Avalara, and organiser of brightonalt.net, a monthly meetup for .NET developers. The QR code links to https://github.com/irrelevantElephant/cca-demo.</aside>
+        <aside class="notes">Introduce yourself: Harry, working at Avalara, and organiser of brightonalt.net, a monthly meetup for .NET developers. The QR code links to https://cca-demo.irrelevantelephant.co.uk/.</aside>
       </section>
 
       <!-- A · Title. Copy a complete section to reuse a layout. -->
@@ -65,74 +65,22 @@
 
       <!-- E · Cards. Fragments are optional; remove class="fragment" for all-at-once. -->
       <section id="cards" class="slide layout-cards" aria-labelledby="cards-heading">
-        <header><p class="eyebrow">Project-level context / Faster response</p><h2 id="cards-heading">Help an engineer ramp up fast.</h2></header>
+        <header><p class="eyebrow">Project-level context / Faster response</p><h2 id="cards-heading">How can agents help us?</h2></header>
+        <h3 class="cards-context fragment">Context!</h3>
         <div class="cards">
-          <article class="card fragment"><div class="card-top"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6M5 21h14"/></svg></span><span class="mono">01</span></div><h3>Memory files</h3><p>Keep repo-specific architecture and conventions close to the code.</p><span class="card-tag">Project context</span></article>
-          <article class="card fragment"><div class="card-top"><span class="icon-box violet"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h4"/></svg></span><span class="mono">02</span></div><h3>MCPs</h3><p>Connect the agent to approved tools and operational data.</p><span class="card-tag">Useful integrations</span></article>
-          <article class="card fragment"><div class="card-top"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v9h9M9 6h9v9"/></svg></span><span class="mono">03</span></div><h3>Skills</h3><p>Capture repeatable workflows for investigation and response.</p><span class="card-tag">Reusable procedures</span></article>
+          <article class="card fragment"><div class="card-top"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6M5 21h14"/></svg></span><span class="mono">01</span></div><h3>Memory files</h3><p>Generic context for navigating a codebase.</p></article>
+          <article class="card fragment"><div class="card-top"><span class="icon-box violet"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h4"/></svg></span><span class="mono">02</span></div><h3>MCPs</h3><p>Connections to observability platforms and infrastructure.</p></article>
+          <article class="card fragment"><div class="card-top"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v9h9M9 6h9v9"/></svg></span><span class="mono">03</span></div><h3>Skills</h3><p>Combine project-memory and real-time data to produce mitigations.</p></article>
         </div>
         <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Three-card layout</span></footer>
-        <aside class="notes">Together, well-maintained project-level MCP configuration, skills and memory files can help a support engineer understand a repository and act more quickly during a production outage. Keep permissions bounded, validate findings, and require appropriate review before risky changes. Advance three times to reveal each element.</aside>
+        <aside class="notes">Together, well-maintained project-level MCP configuration, skills and memory files can help a support engineer understand a repository and act more quickly during a production outage. Keep permissions bounded, validate findings, and require appropriate review before risky changes. Reveal “Context!” first, then advance three times to reveal the cards.</aside>
       </section>
 
-      <!-- F · Architecture. SVG coordinates share the slide's design scale. -->
-      <section id="architecture" class="slide layout-diagram" aria-labelledby="architecture-heading">
-        <header><p class="eyebrow">System view / Architecture</p><h2 id="architecture-heading">Show how the pieces connect.</h2></header>
-        <figure class="diagram-surface">
-          <svg class="architecture" viewBox="0 0 1400 380" role="img" aria-labelledby="diagram-title diagram-desc">
-            <title id="diagram-title">Example system flow</title><desc id="diagram-desc">An input source sends a request to a processing layer. That layer produces an output and exchanges context with a supporting service below it.</desc>
-            <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1 9 5 0 9"/></marker></defs>
-            <path class="connector" d="M360 125H540" marker-end="url(#arrow)"/><path class="connector" d="M860 125h180" marker-end="url(#arrow)"/><path class="connector secondary" d="M700 190v75" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
-            <text class="edge-label" x="450" y="96">request</text><text class="edge-label" x="950" y="96">result</text><text class="edge-label" x="800" y="237">context</text>
-            <g class="diagram-node"><rect x="60" y="60" width="300" height="130" rx="16"/><text x="210" y="117">Input source</text><text class="node-detail" x="210" y="153">01 / Receive</text></g>
-            <g class="diagram-node primary"><rect x="540" y="60" width="320" height="130" rx="16"/><text x="700" y="117">Processing layer</text><text class="node-detail" x="700" y="153">02 / Transform</text></g>
-            <g class="diagram-node"><rect x="1040" y="60" width="300" height="130" rx="16"/><text x="1190" y="117">Output</text><text class="node-detail" x="1190" y="153">03 / Deliver</text></g>
-            <g class="diagram-node supporting"><rect x="540" y="275" width="320" height="80" rx="16"/><text x="700" y="324">Supporting service</text></g>
-          </svg>
-          <figcaption><span class="badge">Illustrative only</span><span>Simple nodes. Explicit relationships. One clear flow.</span></figcaption>
-        </figure>
-        <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Architecture layout</span></footer>
-        <aside class="notes">This is a generic diagram, not the proposed talk architecture. Reuse diagram-node, connector and edge-label classes for future diagrams.</aside>
-      </section>
-
-      <!-- G · Code / terminal -->
-      <section id="code" class="slide layout-code" aria-labelledby="code-heading">
-        <header><p class="eyebrow">Under the hood / Code</p><h2 id="code-heading">Let the implementation speak.</h2></header>
-        <div class="code-grid"><div class="terminal"><div class="terminal-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>example.config.ts</span><span class="terminal-language">TypeScript</span></div><pre><code class="language-typescript" data-trim data-noescape>type ExampleConfig = {
-  name: string;
-  enabled: boolean;
-};
-
-const config: ExampleConfig = {
-  name: 'sample-workflow',
-  enabled: true,
-};</code></pre></div><aside class="code-caption"><span class="badge">Example / Config</span><h3>Small enough<br>to read.</h3><p>Show only the lines that matter. Explain the rest aloud.</p></aside></div>
-        <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Code layout</span></footer>
-        <aside class="notes">The code is a placeholder configuration. Syntax highlighting is local. Use language-bash for terminal commands, or language-plaintext for output.</aside>
-      </section>
-
-      <!-- H · Big statement -->
-      <section id="statement" class="slide layout-statement" aria-labelledby="statement-heading">
-        <p class="eyebrow">One thought / Full focus</p><div class="statement-copy"><div class="rule"></div><h2 id="statement-heading">A clear idea<br>needs <span class="accent">room<br>to land.</span></h2></div>
-        <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Statement layout</span></footer>
-        <aside class="notes">Let this slide breathe. Use one sentence and avoid extra explanatory copy.</aside>
-      </section>
-
-      <!-- I · Metrics: explicit sample labels avoid implying real results. -->
-      <section id="metrics" class="slide layout-metrics" aria-labelledby="metrics-heading">
-        <header><p class="eyebrow">By the numbers / Sample data</p><h2 id="metrics-heading">Give the numbers a stage.</h2></header>
-        <div class="metrics"><article class="metric"><p class="metric-label">Baseline</p><p class="metric-value">40<span>min</span></p><p>Example starting value</p></article><article class="metric featured"><p class="metric-label">Comparison</p><p class="metric-value">10<span>min</span></p><p>Example comparison value</p></article><article class="metric"><p class="metric-label">Difference</p><p class="metric-value">75<span>%</span></p><p>Illustrative reduction</p></article></div>
-        <p class="metric-footnote"><span class="badge">Placeholder data</span> Layout demonstration only. Not measured results.</p>
-        <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Metrics layout</span></footer>
-        <aside class="notes">These figures are fictional. Replace with validated measurements and add source, timeframe and methodology before presenting actual outcomes.</aside>
-      </section>
-
-      <!-- J · Live demo transition -->
+      <!-- F · Demo -->
       <section id="demo" class="slide layout-demo bg-atmosphere" aria-labelledby="demo-heading">
-        <p class="eyebrow">Switching context / Live session</p><div class="demo-copy"><span class="badge status-ready">Demo checkpoint</span><h2 id="demo-heading">From slides<br>to <span class="accent">hands-on.</span></h2><div class="demo-prompt"><span aria-hidden="true">❯</span><span>./start-demo</span><span class="cursor" aria-hidden="true"></span></div></div>
-        <div class="demo-glyph" aria-hidden="true">&gt;_</div>
-        <footer class="slide-footer"><span>Take a closer look.</span><span class="mono">Live demo / Placeholder</span></footer>
-        <aside class="notes">Transition layout only: ./start-demo is illustrative, not an executable command in this repository. Prepare a separate demo and a recording fallback later.</aside>
+        <div class="demo-copy"><h2 id="demo-heading">Demo<span class="accent">!</span></h2></div>
+        <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Demo</span></footer>
+        <aside class="notes">Use the QR code to open https://cca-demo.irrelevantelephant.co.uk/.</aside>
       </section>
 
       <!-- K · Further reading -->
