@@ -37,6 +37,9 @@ html, body, .reveal-viewport { background: var(--bg); }
 .reveal .subtitle { color: var(--muted); font-size: 32px; margin-top: 32px; }
 .reveal .slide-footer { position: absolute; bottom: 38px; left: var(--safe-x); right: var(--safe-x); display: flex; align-items: center; justify-content: space-between; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 17px; }
 .reveal .slide-footer strong { color: var(--text); font-weight: 550; margin-right: 24px; }
+.reveal .slide-qr { position: absolute; right: var(--safe-x); top: var(--safe-y); z-index: 2; display: block; width: 136px; height: 136px; padding: 4px; background: #fff; border-radius: 4px; }
+.reveal .slide-qr img { display: block; width: 100%; height: 100%; margin: 0; object-fit: contain; }
+.reveal .slide-qr:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 .reveal .slide-footer .mono { font-size: 15px; }
 .reveal .controls { color: var(--accent); font-size: 7px; right: 12px; bottom: 24px; }
 .reveal .progress { height: 3px; color: var(--accent); background: var(--bg-secondary); }

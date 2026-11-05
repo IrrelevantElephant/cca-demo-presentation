@@ -8,6 +8,14 @@ import './styles/layouts.css';
 import './styles/components.css';
 
 const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+document.querySelectorAll('.slides section.slide:not(#about)').forEach((slide) => {
+  const link = document.createElement('a');
+  link.className = 'slide-qr';
+  link.href = 'https://github.com/irrelevantElephant/cca-demo';
+  link.setAttribute('aria-label', 'Visit the cca-demo GitHub repository');
+  link.innerHTML = '<img src="/src/assets/images/cca-demo-qr.png" alt="">';
+  slide.append(link);
+});
 const deck = new Reveal({
   width: 1600,
   height: 900,
