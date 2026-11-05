@@ -31,31 +31,15 @@
       </section>
 
       <!-- A · Title. Copy a complete section to reuse a layout. -->
-      <section id="title" class="slide layout-title bg-atmosphere" aria-labelledby="title-heading">
-        <div class="eyebrow"><span class="brand-mark" aria-hidden="true"></span> Engineering / Lightning talk</div>
-        <div class="title-copy">
-          <p class="edition">Design preview <span>/</span> 01</p>
-          <h1 id="title-heading">Reducing MTTR<br>with <span class="accent">AI Agents</span></h1>
-          <p class="subtitle">A technical talk. A new perspective.</p>
+      <section id="title" class="slide layout-content" aria-labelledby="title-heading">
+        <header><p class="eyebrow">The essentials / DORA metrics</p><h2 id="title-heading">Four key measures of delivery and reliability</h2></header>
+        <div class="dora-metrics" aria-label="DORA metrics">
+          <div class="dora-metric"><span class="mono">01</span><strong>Deployment frequency</strong></div>
+          <div class="dora-metric"><span class="mono">02</span><strong>Lead time for changes</strong></div>
+          <div class="dora-metric"><span class="mono">03</span><strong>Change failure rate</strong></div>
+          <div class="dora-metric fragment highlight"><span class="mono">04</span><strong>Time to restore service <span class="accent">(MTTR)</span></strong></div>
         </div>
-        <svg class="signal-art" viewBox="0 0 560 600" aria-hidden="true">
-          <defs><pattern id="signal-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="currentColor" stroke-width="1"/></pattern></defs>
-          <rect width="560" height="600" fill="url(#signal-grid)" opacity=".18"/>
-          <g fill="none" stroke="currentColor" stroke-width="2"><rect x="115" y="135" width="330" height="330" rx="48" transform="rotate(30 280 300)" opacity=".25"/><rect x="160" y="180" width="240" height="240" rx="32" transform="rotate(30 280 300)" opacity=".6"/><path d="M0 300h190m180 0h190M280 0v210m0 180v210" opacity=".4"/></g>
-          <rect x="215" y="235" width="130" height="130" rx="24" fill="#131B2E" stroke="currentColor" stroke-width="2"/>
-          <path d="m248 277 24 23-24 23m40 0h28" fill="none" stroke="currentColor" stroke-width="5"/>
-          <g fill="currentColor"><circle cx="115" cy="300" r="6"/><circle cx="445" cy="300" r="6"/><circle cx="280" cy="135" r="6"/><circle cx="280" cy="465" r="6"/></g>
-        </svg>
-        <aside class="notes">Opening title layout. Replace the subtitle as needed. Presenter details are on the preceding About me slide.</aside>
-      </section>
-
-      <!-- B · Section divider -->
-      <section id="section" class="slide layout-section bg-atmosphere" aria-labelledby="section-heading">
-        <div class="eyebrow">Chapter / 01</div>
-        <span class="section-number" aria-hidden="true">01</span>
-        <div class="section-copy"><div class="rule"></div><h2 id="section-heading">A new section.<br><span class="muted">A fresh perspective.</span></h2><p class="subtitle">A short line to set the direction.</p></div>
-        <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Section divider</span></footer>
-        <aside class="notes">Pause here before introducing a new section. Keep the supporting line brief.</aside>
+        <aside class="notes">Introduce the four commonly used DORA measures: deployment frequency, lead time for changes, change failure rate, and time to restore service. Reveal the final item as a fragment to emphasize MTTR, then advance to the next slide for its definition. DORA's current research may refer to this as failed deployment recovery time; describe the operational measure consistently for your audience.</aside>
       </section>
 
       <!-- C · Standard content -->
@@ -152,12 +136,16 @@ const config: ExampleConfig = {
         <aside class="notes">Transition layout only: ./start-demo is illustrative, not an executable command in this repository. Prepare a separate demo and a recording fallback later.</aside>
       </section>
 
-      <!-- K · Closing -->
-      <section id="closing" class="slide layout-closing bg-atmosphere" aria-labelledby="closing-heading">
-        <p class="eyebrow"><span class="brand-mark" aria-hidden="true"></span> Thank you / Keep the conversation going</p><div class="closing-copy"><h2 id="closing-heading">Good questions.<br><span class="accent">Better conversations.</span></h2><p class="subtitle">What would you like to explore?</p></div>
-        <div class="contact"><strong>Presenter name</strong><span>Role / Organisation</span><a href="mailto:presenter@example.com">presenter@example.com <span aria-hidden="true">↗</span></a></div>
-        <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">End / Questions</span></footer>
-        <aside class="notes">Replace the presenter and contact placeholders before publishing. This is the end of the layout sampler.</aside>
+      <!-- K · Further reading -->
+      <section id="closing" class="slide layout-content further-reading" aria-labelledby="closing-heading">
+        <header><p class="eyebrow">Further reading / Resources</p><h2 id="closing-heading">Further reading</h2></header>
+        <ul class="reading-list">
+          <li><cite>The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations</cite> <span>— How to do the thing</span></li>
+          <li><cite>Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations</cite> <span>— How to convince your management to let you do the thing</span></li>
+          <li><a href="https://sre.google/sre-book/introduction/">Site Reliability Engineering</a> <span>— Google</span></li>
+        </ul>
+        <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Further reading</span></footer>
+        <aside class="notes">Recommended reading on software delivery performance, DevOps practices, and site reliability engineering.</aside>
       </section>
     </div>
   </div>
