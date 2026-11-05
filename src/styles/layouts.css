@@ -28,7 +28,8 @@
 .dora-metric { min-height: 150px; display: flex; align-items: center; gap: 28px; padding: 28px 36px; border: 1px solid var(--border); border-radius: 16px; background: var(--bg-secondary); }
 .dora-metric .mono { color: var(--accent); font-size: 24px; }
 .dora-metric strong { font-size: 32px; font-weight: 550; }
-.dora-metric.highlight { border-color: var(--accent); background: #13263a; }
+.reveal .slides section .dora-metric.fragment { opacity: 1; visibility: visible; }
+.reveal .dora-metric.fragment.current-fragment { border-color: var(--accent); background: #13263a; box-shadow: inset 5px 0 var(--accent); }
 .reveal .reading-list { display: grid; gap: 26px; margin: 64px 0 0; padding: 0; list-style: none; counter-reset: reading; }
 .reveal .reading-list li { position: relative; counter-increment: reading; padding: 22px 28px 22px 84px; border-left: 3px solid var(--border); background: var(--bg-secondary); font-size: 29px; line-height: 1.35; }
 .reveal .reading-list li::before { content: '•'; position: absolute; left: 30px; top: 22px; color: var(--accent); font-size: 32px; line-height: 1; }

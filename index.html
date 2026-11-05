@@ -32,22 +32,21 @@
 
       <!-- A · Title. Copy a complete section to reuse a layout. -->
       <section id="title" class="slide layout-content" aria-labelledby="title-heading">
-        <header><p class="eyebrow">The essentials / DORA metrics</p><h2 id="title-heading">Four key measures of delivery and reliability</h2></header>
+        <header><p class="eyebrow">The essentials / DORA metrics</p><h2 id="title-heading">Four Metrics for Software Delivery</h2></header>
         <div class="dora-metrics" aria-label="DORA metrics">
           <div class="dora-metric"><span class="mono">01</span><strong>Deployment frequency</strong></div>
           <div class="dora-metric"><span class="mono">02</span><strong>Lead time for changes</strong></div>
           <div class="dora-metric"><span class="mono">03</span><strong>Change failure rate</strong></div>
-          <div class="dora-metric fragment highlight"><span class="mono">04</span><strong>Time to restore service <span class="accent">(MTTR)</span></strong></div>
+          <div class="dora-metric fragment"><span class="mono">04</span><strong>Time to restore service <span class="accent">(MTTR)</span></strong></div>
         </div>
-        <aside class="notes">Introduce the four commonly used DORA measures: deployment frequency, lead time for changes, change failure rate, and time to restore service. Reveal the final item as a fragment to emphasize MTTR, then advance to the next slide for its definition. DORA's current research may refer to this as failed deployment recovery time; describe the operational measure consistently for your audience.</aside>
+        <aside class="notes">Introduce the four commonly used DORA measures: deployment frequency, lead time for changes, change failure rate, and time to restore service. Keep MTTR visible with the other measures, then advance once to highlight it before moving to the next slide for its definition. DORA's current research may refer to this as failed deployment recovery time; describe the operational measure consistently for your audience.</aside>
       </section>
 
       <!-- C · Standard content -->
       <section id="content" class="slide layout-content" aria-labelledby="content-heading">
         <header><p class="eyebrow">The essentials / Incident response</p><h2 id="content-heading">What is MTTR?</h2></header>
         <div class="content-grid">
-          <div><p class="lead">Mean time to recovery<br>(or repair).</p><p class="body-copy">A measure of how long it takes to restore service after an incident is detected.</p></div>
-          <aside class="callout"><span class="eyebrow">Why it matters</span><p>MTTR measures how effectively we respond when things go wrong.</p><span class="badge">Recovery matters</span></aside>
+          <div><p class="lead">Mean time to recovery/repair</p><p class="body-copy">Average time to resolve or mitigate an incident.</div>
         </div>
         <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Measure recovery</span></footer>
         <aside class="notes">MTTR has several common expansions, including mean time to recovery and mean time to repair. For this talk, use it as the time from incident detection to restored service. Be explicit about the chosen start and end points when measuring it.</aside>
@@ -55,10 +54,10 @@
 
       <!-- D · Comparison -->
       <section id="comparison" class="slide layout-comparison" aria-labelledby="comparison-heading">
-        <header><p class="eyebrow">Prevention and response / Both matter</p><h2 id="comparison-heading">Shift left—and be ready.</h2></header>
+        <header><p class="eyebrow">Prevention and response are equally important</p><h2 id="comparison-heading">Shifting left and right</h2></header>
         <div class="columns">
-          <article class="comparison-panel"><span class="panel-index">01 / Prevent</span><h3>Shift-left development</h3><p>Good testing and QA catch defects earlier and reduce risk.</p><div class="divider"></div><ul class="clean-list"><li>Build quality into delivery</li><li>Find issues before production</li></ul></article>
-          <article class="comparison-panel accented"><span class="panel-index">02 / Recover</span><h3>Expect incidents</h3><p>Testing cannot eliminate every production failure. Plan to respond and restore service.</p><div class="divider"></div><ul class="clean-list"><li>Make incidents observable</li><li>Improve recovery time (MTTR)</li></ul></article>
+          <article class="comparison-panel"><span class="panel-index">01 / Prevention</span><h3>Shift left development</h3><p>Good testing and QA catch defects earlier and reduce risks around deployment.</p><div class="divider"></div><ul class="clean-list"><li>Find issues before production</li><li>CI/CD pipelines to help us quicky verify changes</li></ul></article>
+          <article class="comparison-panel accented"><span class="panel-index">02 / Recover</span><h3>Expect incidents</h3><p>We can't control whether we will have outages or not. We can control how we respond to them.<div class="divider"></div><ul class="clean-list"><li>Instrument systems with observability mechanisms</li><li>Automate the manual parts of recovery</li></ul></article>
         </div>
         <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Prevent + recover</span></footer>
         <aside class="notes">This is not an argument against shift-left. Testing and QA are essential, but complex systems still fail in production. MTTR is one way to assess how well we handle those failures.</aside>
@@ -68,9 +67,9 @@
       <section id="cards" class="slide layout-cards" aria-labelledby="cards-heading">
         <header><p class="eyebrow">Project-level context / Faster response</p><h2 id="cards-heading">Help an engineer ramp up fast.</h2></header>
         <div class="cards">
-          <article class="card fragment"><div class="card-top"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h4"/></svg></span><span class="mono">01</span></div><h3>MCP</h3><p>Connect the agent to approved tools and operational data.</p><span class="card-tag">Useful integrations</span></article>
-          <article class="card fragment"><div class="card-top"><span class="icon-box violet"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v9h9M9 6h9v9"/></svg></span><span class="mono">02</span></div><h3>Skills</h3><p>Capture repeatable workflows for investigation and response.</p><span class="card-tag">Reusable procedures</span></article>
-          <article class="card fragment"><div class="card-top"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6M5 21h14"/></svg></span><span class="mono">03</span></div><h3>Memory files</h3><p>Keep repo-specific architecture and conventions close to the code.</p><span class="card-tag">Project context</span></article>
+          <article class="card fragment"><div class="card-top"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6M5 21h14"/></svg></span><span class="mono">01</span></div><h3>Memory files</h3><p>Keep repo-specific architecture and conventions close to the code.</p><span class="card-tag">Project context</span></article>
+          <article class="card fragment"><div class="card-top"><span class="icon-box violet"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h4"/></svg></span><span class="mono">02</span></div><h3>MCPs</h3><p>Connect the agent to approved tools and operational data.</p><span class="card-tag">Useful integrations</span></article>
+          <article class="card fragment"><div class="card-top"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v9h9M9 6h9v9"/></svg></span><span class="mono">03</span></div><h3>Skills</h3><p>Capture repeatable workflows for investigation and response.</p><span class="card-tag">Reusable procedures</span></article>
         </div>
         <footer class="slide-footer"><span>Reducing MTTR with AI Agents</span><span class="mono">Three-card layout</span></footer>
         <aside class="notes">Together, well-maintained project-level MCP configuration, skills and memory files can help a support engineer understand a repository and act more quickly during a production outage. Keep permissions bounded, validate findings, and require appropriate review before risky changes. Advance three times to reveal each element.</aside>
